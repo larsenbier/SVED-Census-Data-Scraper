@@ -1,0 +1,43 @@
+========================================================================
+
+CONFIG FILE: 
+this file allows you to change the behavior of the notebook which updates the Demographics master sheet.
+
+TO EDIT: download the file as a .txt and use a plain text editor to make changes. When you are finished, upload it back to your google drive and replace any existing files with matching names.
+
+========================================================================
+
+VARIABLE EXPLANATIONS:
+
+key					-- a string provided by the census bureau that allows us to query unlimited data from their website. If the current notebook is failing, a good way to fix it is to get a new key from the census bureau and paste it into this document.
+
+year 					-- the year you want to fill in. (i.e. "2020"). Must be a year for which the ACS has released their 5 year estimates for     							-- valid values: Any year >= 2017 and <= the most recent ACS year
+
+include_DP05	 			-- Boolean; determines whether the notebook will update the DP05 related data (age data)
+					-- valid values: "True" or "False" (quotes not included)
+
+include_DP04			 	-- Boolean; determines whether the notebook will update the DP04 related data (race data)
+					-- valid values: "True" or "False" (quotes not included)
+
+include_DP03 				-- Boolean; determines whether the notebook will update the table labeled "LISTINGS" on the "Active Listings" tab in the master sheet.
+					-- valid values: "True" or "False" (quotes not included)
+
+========================================================================
+
+VARIABLE VALUES: after the colon, please write the desired value of the variable. The notebook will use these values during execution. If an invalid value is entered, an error will occur, but master notebook will not be affected.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+key: 356157f0675bf8ad17969b216569bd70244f5d63
+
+year: 2017
+
+include_DP05: True
+
+include_DP04: True
+
+include_DP03: True
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+========================================================================
