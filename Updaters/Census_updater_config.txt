@@ -11,7 +11,7 @@ VARIABLE EXPLANATIONS:
 
 key					-- a string provided by the census bureau that allows us to query unlimited data from their website. If the current notebook is failing, a good way to fix it is to get a new key from the census bureau and paste it into this document.
 
-year 					-- the year you want to fill in. (i.e. "2020"). Must be a year for which the ACS has released their 5 year estimates for     							-- valid values: Any year >= 2017 and <= the most recent ACS year
+year 					-- the year you want to fill in. (i.e. "2020"). Must be a year for which the ACS has released their 5 year estimates for     							-- valid values: Any year >= 2009 and <= the most recent ACS year
 
 include_DP05	 			-- Boolean; determines whether the notebook will update the DP05 related data (age data)
 					-- valid values: "True" or "False" (quotes not included)
